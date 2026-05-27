@@ -18,6 +18,7 @@ results/
 outputs/
 dist/
 _output/
+content/README.md
 content/notebooks/
 .jupyterlite.doit.db
 

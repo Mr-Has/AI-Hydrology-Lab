@@ -42,7 +42,7 @@
         </div>
         <p>
           Open an exercise card to launch the notebook in JupyterLite. Each exercise uses small
-          Python examples for AI-assisted scientific programming in hydrology.
+          Python examples for hydrology work with coding assistants.
           Saved edits stay in your browser and do not change the hosted notebooks.
         </p>
       </section>
@@ -135,9 +135,9 @@
           <p class="eyebrow">Plain-language guide</p>
           <h2 id="plain-guide-title">What each exercise is about</h2>
           <p>
-            This guide explains the goal of each notebook before students open it.
-            The language is kept simple so the workflow and model ideas are clear even
-            without a programming background.
+            This guide explains the goal of each notebook before it is opened.
+            The language is kept simple so the workflow and model ideas are clear
+            without assuming a programming background.
           </p>
         </div>
 
@@ -147,8 +147,8 @@
             <div>
               <h3>Finding very low river flows</h3>
               <p>
-                Students look at river-flow data, make a short plan, then use code to
-                find unusually low water conditions. The model idea is a percentile:
+                Start with a river-flow record, make a short plan, then use code to
+                identify unusually low water conditions. The model idea is a percentile:
                 Q90 or Q95 describes a flow level that most days are above.
               </p>
             </div>
@@ -159,8 +159,8 @@
             <div>
               <h3>Explaining drought with rainfall</h3>
               <p>
-                Students learn how a rainfall record can be turned into a drought score.
-                The SPI idea is simple: compare recent rainfall with what is normal for
+                A rainfall record is converted into a drought score. The SPI idea is
+                simple: compare recent rainfall with what is normal for
                 that place, where negative values mean drier conditions.
               </p>
             </div>
@@ -171,8 +171,8 @@
             <div>
               <h3>Checking whether a model is doing well</h3>
               <p>
-                Students compare measured streamflow with model predictions. NSE and KGE
-                work like scorecards: they show whether the model follows the observed
+                Measured streamflow is compared with model predictions. NSE and KGE
+                are diagnostic scores: they show whether the model follows the observed
                 river behavior closely enough to trust.
               </p>
             </div>
@@ -183,8 +183,8 @@
             <div>
               <h3>Keeping project instructions consistent</h3>
               <p>
-                Students see why a project needs stable rules, such as units, time step,
-                and data checks. This is a workflow exercise: it helps every coding
+                A project needs stable rules, such as units, time step,
+                and data checks. This workflow exercise helps every coding
                 session start with the same scientific expectations.
               </p>
             </div>
@@ -195,8 +195,8 @@
             <div>
               <h3>Reusing good hydrology habits</h3>
               <p>
-                Students turn repeated hydrology checks into reusable instructions. The
-                workflow helps avoid common flood-analysis mistakes, such as mixing up
+                Repeated hydrology checks are turned into reusable instructions. The
+                workflow is meant to avoid common flood-analysis mistakes, such as mixing up
                 water years, missing values, or rank conventions.
               </p>
             </div>
@@ -207,7 +207,7 @@
             <div>
               <h3>Estimating rare floods</h3>
               <p>
-                Students use annual peak flows to estimate events such as a 10-year or
+                Annual peak flows are used to estimate events such as a 10-year or
                 100-year flood. The LP3 model fits a probability pattern to past flood
                 peaks so rare flood sizes can be estimated.
               </p>
@@ -219,8 +219,8 @@
             <div>
               <h3>Getting water-model data safely</h3>
               <p>
-                Students practice planning a data request before downloading anything.
-                The workflow is to check the command, list what is available, choose a
+                The exercise plans a data request before downloading anything.
+                The order is to check the command, list what is available, choose a
                 small target, preview it, and only then download.
               </p>
             </div>
@@ -231,7 +231,7 @@
             <div>
               <h3>Reading stream-gauge data correctly</h3>
               <p>
-                Students work with a USGS-style streamflow response. The model idea is a
+                A USGS-style streamflow response is used as the example. The data idea is a
                 time series: a sequence of flow measurements over time that must be read
                 with the correct field names, units, and dates.
               </p>
@@ -243,7 +243,7 @@
             <div>
               <h3>Comparing drought over different time windows</h3>
               <p>
-                Students run the same drought idea over short and longer rainfall windows.
+                The same drought calculation is run over short and longer rainfall windows.
                 A 1-month SPI can show quick dry spells, while 3- or 6-month SPI values
                 show slower seasonal drought patterns.
               </p>

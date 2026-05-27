@@ -6,9 +6,9 @@ Faculty of Engineering, University of Ottawa
 Professor Hossein Bonakdari  
 PhD Candidate Mohammad Hashtari
 
-This project contains self-contained Jupyter Notebook exercises for teaching AI-assisted scientific programming in hydrology. The notebooks focus on practical coding habits: exploring before editing, giving specific context, verifying work, preserving project instructions, using reusable skills, independent review, safe data access, API-grounded parsing, and parallel analysis patterns.
+This project contains Jupyter Notebook exercises for teaching Python-based hydrology work with coding assistants. The notebooks emphasize habits that matter in scientific programming: inspect before editing, state assumptions, verify calculations, preserve project instructions, review code, limit data requests, and parse API responses from documented fields.
 
-The examples are hydrology-first and Python-based. They use small synthetic or fixture datasets so the notebooks can run locally without downloading large external data.
+The examples start from hydrology problems and use small synthetic or fixture datasets so they can run locally without downloading large external data.
 
 ## Notebook Index
 
@@ -112,7 +112,7 @@ Temporary executed notebooks are ignored by `.gitignore`.
 
 ## Data and Network Notes
 
-- The notebooks are designed to run without downloading large datasets.
+- The notebooks run without downloading large datasets.
 - Exercise 7 displays AWS CLI commands but does not execute AWS downloads.
 - Exercise 8 uses a local USGS NWIS-style fixture and does not call the live API during execution.
 - In JupyterLite, Python runs in the browser through Pyodide. Shell commands and real external downloads are intentionally not part of the browser workflow.
