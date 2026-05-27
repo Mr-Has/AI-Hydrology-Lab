@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reset Local Edits | AI-Hydrology-Lab</title>
+    <meta
+      name="description"
+      content="Reset local JupyterLite notebook edits stored in this browser."
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script id="jupyter-config-data" type="application/json">
+      {}
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="./" aria-label="AI-Hydrology-Lab home">
+          <img src="assets/uottawa_logo_horizontal_grey.png" alt="uOttawa logo">
+          <span>
+            <strong>AI-Hydrology-Lab</strong>
+            <small>Faculty of Engineering, University of Ottawa</small>
+          </span>
+        </a>
+        <div class="credit">
+          <span>Provided By</span>
+          <strong>Professor Hossein Bonakdari</strong>
+          <strong>PhD Candidate Mohammad Hashtari</strong>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="reset-panel" aria-labelledby="reset-title">
+        <p class="eyebrow">Browser storage reset</p>
+        <h1 id="reset-title">Reset local notebook edits</h1>
+        <p>
+          This clears saved JupyterLite notebook copies from this browser for AI-Hydrology-Lab.
+          It does not change the GitHub repository or the hosted original notebooks.
+        </p>
+        <ul>
+          <li>Use this when a notebook keeps showing your edited local copy.</li>
+          <li>After reset, opening an exercise reloads the original hosted notebook.</li>
+          <li>This also clears local JupyterLite settings for this lab in this browser.</li>
+        </ul>
+        <div class="reset-actions">
+          <button class="reset-action" id="reset-button" type="button">Reset Local Edits</button>
+          <a class="secondary-link" href="./">Cancel</a>
+        </div>
+        <p class="reset-status" id="reset-status" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="reset.js"></script>
+  </body>
+</html>
