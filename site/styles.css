@@ -129,6 +129,14 @@ h1 {
   white-space: nowrap;
 }
 
+.load-note {
+  max-width: 680px;
+  margin: 14px 0 0;
+  color: #354640;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
 .exercise-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
