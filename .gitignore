@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*_executed.ipynb
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local data and outputs
+data/
+results/
+outputs/
+dist/
+_output/
+content/notebooks/
+.jupyterlite.doit.db
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/

@@ -1,0 +1,261 @@
+:root {
+  color-scheme: light;
+  --ink: #15231f;
+  --muted: #62716d;
+  --surface: #ffffff;
+  --line: #d9e1df;
+  --page: #f4f7f8;
+  --green: #173f35;
+  --blue: #1e6388;
+  --garnet: #8f001a;
+  --gold: #d6a94a;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  background:
+    linear-gradient(135deg, rgba(30, 99, 136, 0.12), transparent 34rem),
+    linear-gradient(315deg, rgba(143, 0, 26, 0.08), transparent 32rem),
+    var(--page);
+  color: var(--ink);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+}
+
+.header-inner {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 152px;
+  height: auto;
+  display: block;
+}
+
+.brand span,
+.credit {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.brand strong {
+  font-size: 1.12rem;
+  line-height: 1.15;
+}
+
+.brand small,
+.credit span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+}
+
+.credit {
+  text-align: right;
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+main {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 44px 0 64px;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  align-items: end;
+  gap: 32px;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--garnet);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  max-width: 760px;
+  font-size: 4.65rem;
+  line-height: 0.98;
+  letter-spacing: 0;
+  overflow-wrap: break-word;
+}
+
+.intro > p {
+  margin: 0;
+  color: #354640;
+  font-size: 1.04rem;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.exercise-card {
+  min-width: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+  min-height: 382px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 16px 36px rgba(21, 35, 31, 0.08);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.exercise-card:hover,
+.exercise-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(30, 99, 136, 0.5);
+  box-shadow: 0 22px 48px rgba(21, 35, 31, 0.14);
+  outline: none;
+}
+
+.exercise-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  background: #dfe8ea;
+}
+
+.card-copy {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  padding: 20px;
+}
+
+.card-copy span {
+  color: var(--blue);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.card-copy h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.card-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.55;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 920px) {
+  .header-inner,
+  .intro {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  .header-inner {
+    display: grid;
+  }
+
+  .credit {
+    text-align: left;
+  }
+
+  .exercise-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  h1 {
+    font-size: 3.35rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-inner,
+  main {
+    width: min(100% - 24px, 1180px);
+  }
+
+  .brand {
+    display: grid;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .brand img {
+    width: 96px;
+  }
+
+  main {
+    padding-top: 32px;
+  }
+
+  h1 {
+    font-size: 2.06rem;
+    line-height: 1.08;
+    max-width: 11ch;
+  }
+
+  .brand small,
+  .intro > p,
+  .card-copy p {
+    max-width: 34ch;
+  }
+
+  .exercise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exercise-card {
+    min-height: 0;
+  }
+}

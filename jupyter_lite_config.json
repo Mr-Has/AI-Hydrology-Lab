@@ -1,0 +1,11 @@
+{
+  "LiteBuildConfig": {
+    "contents": ["content"]
+  },
+  "jupyter-config-data": {
+    "appName": "AI-Hydrology-Lab",
+    "disabledExtensions": [
+      "@jupyterlab/apputils-extension:announcements"
+    ]
+  }
+}
