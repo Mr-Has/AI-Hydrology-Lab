@@ -349,14 +349,36 @@ h1 {
     width: min(100% - 24px, 1180px);
   }
 
+  .header-inner {
+    gap: 10px;
+    padding: 12px 0;
+  }
+
   .brand {
     display: grid;
     align-items: flex-start;
-    gap: 14px;
+    gap: 8px;
   }
 
   .brand img {
-    width: 96px;
+    width: 74px;
+  }
+
+  .brand strong {
+    font-size: 1rem;
+  }
+
+  .brand small,
+  .credit span {
+    font-size: 0.8rem;
+  }
+
+  .credit {
+    font-size: 0.86rem;
+  }
+
+  .header-side {
+    gap: 6px;
   }
 
   main {
@@ -366,6 +388,12 @@ h1 {
   h1 {
     font-size: 1.78rem;
     line-height: 1.08;
+  }
+
+  .load-note {
+    max-width: 34ch;
+    font-size: 0.94rem;
+    line-height: 1.5;
   }
 
   .brand small,
