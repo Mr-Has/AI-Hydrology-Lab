@@ -36,8 +36,6 @@ AI-Hydrology-Lab/
 |   |   |-- ...
 |   |   `-- uottawa_logo_horizontal_grey.png
 |   |-- index.html
-|   |-- reset.html
-|   |-- reset.js
 |   `-- styles.css
 |-- notebooks/
 |   |-- 01_explore_plan_code.ipynb
@@ -98,7 +96,7 @@ content/
 
 The workflow copies notebooks from `notebooks/` into the JupyterLite site during deployment, then adds the custom card-based homepage from `site/`. Users land on the exercise cards first and open notebooks from there.
 
-Notebook edits made in JupyterLite are saved only in the user's browser storage. The homepage includes a **Reset Local Edits** control that clears the browser's JupyterLite copy and reloads the original hosted notebooks.
+Notebook edits made in JupyterLite are saved only in the user's browser storage and do not change the hosted notebooks or the GitHub repository.
 
 ## Verification
 
