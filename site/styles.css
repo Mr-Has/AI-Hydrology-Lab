@@ -52,6 +52,7 @@ html {
   align-items: center;
   gap: 16px;
   width: 100%;
+  flex: 1 1 auto;
   min-width: 0;
   color: inherit;
   text-decoration: none;
@@ -90,9 +91,14 @@ html {
   line-height: 1.25;
 }
 
+.credit strong {
+  white-space: nowrap;
+}
+
 .header-side {
   justify-items: end;
   gap: 12px;
+  flex: 0 0 auto;
 }
 
 main {
@@ -102,10 +108,6 @@ main {
 }
 
 .intro {
-  display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
-  align-items: end;
-  gap: 32px;
   margin-bottom: 28px;
 }
 
@@ -124,14 +126,6 @@ h1 {
   font-size: 4.65rem;
   line-height: 0.98;
   letter-spacing: 0;
-  overflow-wrap: break-word;
-}
-
-.intro > p {
-  margin: 0;
-  color: #354640;
-  font-size: 1.04rem;
-  line-height: 1.6;
   overflow-wrap: break-word;
 }
 
@@ -272,8 +266,7 @@ h1 {
 }
 
 @media (max-width: 920px) {
-  .header-inner,
-  .intro {
+  .header-inner {
     align-items: start;
     grid-template-columns: 1fr;
   }
@@ -329,7 +322,6 @@ h1 {
   }
 
   .brand small,
-  .intro > p,
   .card-copy p {
     max-width: 34ch;
   }
