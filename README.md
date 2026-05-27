@@ -73,6 +73,7 @@ AI-Hydrology-Lab/
 |   |   |-- exercise-01.jpg
 |   |   |-- ...
 |   |   `-- uottawa_logo_horizontal_grey.png
+|   |-- exercise-dialogs.js
 |   |-- index.html
 |   `-- styles.css
 |-- notebooks/
